@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="1300dp"
+        android:padding="10dp"
+        android:background="#dbc5fd">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="80dp"
+            android:layout_marginTop="30dp"
+            android:layout_height="50dp"
+            android:text="PERATURAN KOSAN"
+            android:textSize="15dp"
+            android:textColor="@color/white"
+            android:clickable="false"
+            android:backgroundTint="#CC3838"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@color/white"
+            android:layout_marginTop="100dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:fontFamily="sans-serif-medium"
+                android:textSize="15dp"
+                android:lineSpacingExtra="2dp"
+                android:gravity="fill_horizontal"
+                android:text="1. Wajib membayar uang sewa tepat waktu sesuai dengan kesepakatan yang telah ditetapkan.
+\n\n2. Tidak diperbolehkan mengonsumsi minuman beralkohol di dalam kos-kosan.
+\n\n3. Selalu menjaga kebersihan kamar kos dan lingkungan sekitar kos-kosan. Sampah harus dibuang pada tempatnya.
+\n\n4. Tidak diperbolehkan melakukan aktivitas yang mengganggu ketenangan atau privasi penghuni lain, seperti membuat kebisingan yang berlebihan atau mengganggu penghuni yang sedang istirahat.
+\n\n5. Tidak diperbolehkan menggunakan fasilitas kos-kosan untuk kegiatan yang melanggar hukum atau tidak etis, seperti menjual atau menggunakan narkoba.
+\n\n6. Tidak memasak di dalam kamar.*
+\n\n7. Membawa peralatan elektronik seperti magic com/rice cooker dan alat elektronik lainnya akan di kenakan biaya tambahan.
+\n\n8. Tidak merusak fasilitas umum atau fasilitas kamar.
+\n\n9. Menghormati hak privasi penghuni kost lainnya.
+\n\n10. Mengikuti protokol keamanan yang ditetapkan oleh pengelola kost.
+\n\n11. Mengembalikan kunci kost-kostan saat masa kontrak telah berakhir
+\n\n12. Menginap tamu di kamar kos-kosan harus mendapatkan izin dari pemilik kos-kosan dan tidak diperbolehkan untuk menginap lebih dari satu malam.
+\n\n13. Memarkir kendaraan dengan rapih
+\n\n14. Tidak boleh memindahtangankan penghuni/penyewa kostan dan tidak boleh menyewakan kamar kostan kepada orang lain.
+\n\n15. Penghuni yang tidak mengikuti peraturan dapat dikenakan sanksi atau bahkan dapat dikeluarkan tanpa harus menunggu masa sewa habis dan tidak ada pengembalian uang sewa."/>
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+
+
+
+</ScrollView>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.ThirdFragment"
+    android:background="@drawable/bgsatu">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="80dp"
+            android:backgroundTint="#F44336"
+            android:clickable="false"
+            android:text="Pendaftaran"
+            android:textColor="@color/white"
+            android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/namaLengkap"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginRight="20dp"
+            android:fontFamily="@font/open_sans_semibold"
+            android:hint="Nama Lengkap"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/noHp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/namaLengkap"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="160dp"
+            android:layout_marginRight="20dp"
+            android:fontFamily="@font/open_sans_semibold"
+            android:hint="Nomor Hp (Whatsapp)"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/tanggalMasuk"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/noHp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="220dp"
+            android:layout_marginRight="20dp"
+            android:fontFamily="@font/open_sans_semibold"
+            android:hint="Tanggal Masuk (20/08/2004)"
+            android:inputType="date" />
+
+        <EditText
+            android:id="@+id/alamat"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/tanggalMasuk"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="270dp"
+            android:layout_marginRight="20dp"
+            android:fontFamily="@font/open_sans_semibold"
+            android:hint="Alamat Sesuai KTP"
+            android:inputType="text" />
+
+        <Button
+            android:id="@+id/daftarThird"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="400dp"
+            android:layout_marginRight="20dp"
+            android:clickable="true"
+            android:text="Daftar" />
+
+        <TextView
+            android:id="@+id/peringatanDaftar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="460dp"
+            android:layout_marginRight="20dp"
+            android:fontFamily="@font/open_sans_semibold"
+            android:text="*dengan menekan daftar anda setuju bahwa data pribadi anda akan dibagikan kepada pemilik kost!"
+            android:textAllCaps="true"
+            android:textColor="#F44336"
+            android:textSize="11dp"
+            android:textStyle="italic" />
+
+    </androidx.cardview.widget.CardView>
+
+    
+
+</RelativeLayout>

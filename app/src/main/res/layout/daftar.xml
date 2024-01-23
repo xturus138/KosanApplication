@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#11EDED"
+        app:title="Pendaftaran"
+        app:titleTextColor="@color/white" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="590dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/InputLayoutUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="40dp"
+            android:hint="Username"
+            app:helperText="*Perlu diisi"
+            app:helperTextTextColor="#FF0026">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/InputUsername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/InputLayoutNoHp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/InputLayoutUsername"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:hint="NoWhatsapp"
+            app:helperText="*Perlu Diisi"
+            app:helperTextTextColor="#FF0026">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/InputNoHp"
+                android:inputType="number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/InputLayoutPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/InputLayoutNoHp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:hint="Password"
+            app:helperText="*Perlu Diisi"
+            app:helperTextTextColor="#FF0026"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/InputPassword"
+                android:inputType="textPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/InputLayoutConfirmPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/InputLayoutPassword"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:hint="Confirm Password"
+            app:helperText="*Perlu Diisi"
+            app:helperTextTextColor="#FF0026">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/InputConfirmPassword"
+                android:layout_width="match_parent"
+                android:inputType="textPassword"
+                android:layout_height="wrap_content"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/KirimButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_below="@id/InputLayoutConfirmPassword"
+            android:layout_marginTop="26dp"
+            android:clickable="true"
+            android:text="Kirim"/>
+
+        <TextView
+            android:id="@+id/peringatan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/KirimButton"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:text="*dengan menekan kirim anda setuju bahwa data pribadi anda akan dibagikan kepada pemilik kost!"
+            android:textColor="#FF0026"
+            android:textStyle="italic"
+            android:textSize="10dp"
+            android:textAllCaps="true"/>
+
+        <Button
+            android:id="@+id/kembaliButton"
+            android:backgroundTint="#fffbfe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#3F51B5"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/peringatan"
+            android:text="Kembali?"
+            android:clickable="true"/>
+
+        <Button
+            android:id="@+id/cek"
+            android:backgroundTint="#FF0000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#3F51B5"
+            android:layout_marginLeft="300dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/peringatan"
+            android:text="cek?"
+            android:clickable="true"/>
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>
