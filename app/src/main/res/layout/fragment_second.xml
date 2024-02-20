@@ -15,7 +15,7 @@
             android:layout_marginLeft="80dp"
             android:layout_marginRight="80dp"
             android:layout_marginTop="30dp"
-            android:layout_height="50dp"
+            android:layout_height="60dp"
             android:text="PERATURAN KOSAN"
             android:textSize="15dp"
             android:textColor="@color/white"

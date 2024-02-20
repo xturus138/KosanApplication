@@ -54,7 +54,7 @@ public class ControllerLogin {
                 Log.d(TAG, "onClick: daftarButton");
                 //Untuk Pindah ke main daftarActivity
                 Intent intent = new Intent(view.getContext(), daftarActivity.class);
-                view.getContext().startActivity(intent);
+                view.getContext().startActivity (intent);
             }
         });
 
